@@ -8,15 +8,14 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
- const arr=Object.values(obj);
   //your code here
 	let res="";
-	for(let i=0;i<arr.length;i++)
+	for(let i=0;i<=6;i++)
 	{
-	while(num>arr[i][1])
+	while(num>obj[i][1])
 	{
-		res+=arr[i][0];
-		num-=arr[i][1];	
+		res+=obj[i][0];
+		num-=obj[i][1];	
 	}
 		}
 return res;
